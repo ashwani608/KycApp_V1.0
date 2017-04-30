@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="./web3.min.js"></script>
+<script src="./testrpc_app.js"></script>
+<script src="./ether-pudding.min.js"></script>
+<body>
+<form class="form-horizontal" id="customerReqForm">
+<fieldset>
+
+<!-- Form Name -->
+<legend>New Data Request</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Customer Name</label>  
+  <div class="col-md-4">
+  <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control input-md" required>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="email">Email</label>  
+  <div class="col-md-4">
+  <input id="email" name="email" type="email" placeholder="Enter your email id" class="form-control input-md" required>
+    
+  </div>
+</div>
+
+<!-- Password input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="address">Address</label>
+  <div class="col-md-4">
+    <input id="address" name="address" type="text" class="form-control input-md" required>
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="ssn">SSN no.</label>  
+  <div class="col-md-4">
+  <input id="ssn" name="ssn" type="text" placeholder="Enter your SSN no." class="form-control input-md" required>
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="contact">Contact no.</label>  
+  <div class="col-md-4">
+  <input id="contact" name="contact" type="text" placeholder="Enter your contact no." class="form-control input-md" required>
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="signup"></label>
+  <div class="col-md-4">
+    <button id="submitRequest" name="request" class="btn btn-success">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</body>
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<!--<script>
+    $('#submitRequest').click(function() {
+       alert('equest submitted successfully');
+        /* $.post('', $('#customerReqForm').serialize(), function(status) {
+            if(status == "success") {
+
+            }
+            else {
+                alert(status);
+            }
+        });*/
+    });
+</script>-->
+</html>
