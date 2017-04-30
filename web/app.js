@@ -46,11 +46,30 @@ $(document).ready(function(){
             name: uname,
             password: pwd
         },
+        /*function(data, status){
+            console.log("Data: " + data + "\nStatus: " + status);
+            console.log("customer client");
+            if(status == 'true') 
+            {
+                console.log("inside status == success");
+                console.log("data.success");
+
+                window.location.href='custHome.html';
+                
+                
+            }
+            else 
+            {
+                    alert('Pease enter valid username and password');
+            }
+        });*/
         function(data, status){
             console.log("Data: " + data + "\nStatus: " + status);
+            //debugger;
             console.log("customer client");
             if(status == 'success') {
                 if(data.success) {
+                    //debugger;
                     window.location.href='custHome.html';
                 }
                 else {
