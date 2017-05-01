@@ -35,7 +35,9 @@ $('#submitRequest').click(function() {
 		//let abi = JSON.parse(contracts.KycCustomer.abi);
 		//var Kycabi = abi;
 		//console.log(KycCustomer.deployed());
-		var abi = [
+
+    var abi = [{"constant":true,"inputs":[],"name":"getCustomer","outputs":[{"name":"","type":"string"},{"name":"","type":"uint256"},{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"myCustomer","outputs":[{"name":"name","type":"string"},{"name":"customerID","type":"uint256"},{"name":"ssn","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"name","type":"string"},{"name":"customerID","type":"uint256"},{"name":"ssn","type":"uint256"},{"name":"dummyVal","type":"bool"}],"name":"addCustomer","outputs":[{"name":"success","type":"bool"}],"payable":false,"type":"function"},{"inputs":[],"payable":false,"type":"constructor"}];
+	/*var abi = [
     {
       "constant": true,
       "inputs": [],
@@ -113,7 +115,7 @@ $('#submitRequest').click(function() {
       "payable": false,
       "type": "constructor"
     }
-  ];
+  ];*/
         var contract = web3.eth.contract(abi).at('0x785a387ace023971516137f958d9dd4cebaf3941');
 
 
